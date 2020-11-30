@@ -1,0 +1,15 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $sidebar-width;
+    height: 100vh;
+    background: url('../images/sidebar-bg.svg') no-repeat center top, $primary;
+    box-shadow: 5px 0 15px rgba(#050505, 0.1);
+}
+
+.sidebar__content-img {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
