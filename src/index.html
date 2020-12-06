@@ -3,4 +3,35 @@ layout: default
 title: Home
 ---
 
-Hello!
+<div class="stories">
+    <div class="stories__item">
+        <h2 class="stories__title">Отдыхаю на природе</h2>
+        <time class="stories__date" datetime="2020-09-21">21.09.2020</time>
+    </div>
+    <div class="stories__item">
+        <h2 class="stories__title">Заканчиваю сложный проект</h2>
+        <time class="stories__date" datetime="2020-09-15">15.09.2020</time>
+    </div>
+    <div class="stories__item">
+        <h2 class="stories__title">Переехал в новую квартиру</h2>
+        <time class="stories__date" datetime="2020-09-11">11.09.2020</time>
+    </div>
+    <div class="stories__item">
+        <h2 class="stories__title">Осень пришла!</h2>
+        <time class="stories__date" datetime="2020-08-28">28.08.2020</time>
+    </div>
+</div>
+
+<div class="add-post">
+    <form class="add-post__form" action="/" method="post">
+        <textarea class="add-post__text" name="post-text" placeholder="Напишите что-нибудь"></textarea>
+        <div class="add-post__btns">
+            <label for="post-img" class="add-post__file">
+                <input type="file" name="post-img" id="post-img" class="hidden">
+            </label>
+            <button class="add-post__submit" type="submit">
+                <span class="visually-hidden">Отправить</span>
+            </button>
+        </div>
+    </form>
+</div>
