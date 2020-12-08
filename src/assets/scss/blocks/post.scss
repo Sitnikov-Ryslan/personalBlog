@@ -40,13 +40,38 @@
             text-decoration: underline;
         }
     }
+
+    &_open {
+        margin-bottom: 0.4rem;
+    }
+}
+
+.post__description {
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: #d2d2d2;
+    margin-bottom: 2rem;
 }
 
 .post__text {
     font-weight: normal;
     font-size: 1.4rem;
+    line-height: 2.1rem;
     color: #d2d2d2;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #1C1C1C;
+
+    p {
+        color: $white;
+        margin-bottom: 3rem;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 .post__footer {
@@ -68,6 +93,10 @@
         &:hover {
             text-decoration: underline;
         }
+    }
+
+    &_open {
+        margin-bottom: 3rem;
     }
 }
 
@@ -91,4 +120,84 @@
     &:hover {
         text-decoration: underline;
     }
+}
+
+.post__actions {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: $white;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        line-height: 2rem;
+        opacity: 0.6;
+        transition: opacity .1s;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.post__share {
+    display: block;
+    height: 2rem;
+    background: url('../images/post-share.svg') no-repeat right center;
+    padding-right: 2.5rem;
+}
+
+.post__related {
+    border-bottom: 1px solid #1C1C1C;
+    padding-bottom: .5rem;
+    margin-bottom: 3rem;
+}
+
+.post__related-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $white;
+    margin-bottom: 2rem;
+}
+
+.post__related-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.post__related-item {
+    width: 45%;
+    margin-bottom: 2.5rem;
+}
+
+.post__related-subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    color: $yellow;
+
+    a {
+        max-width: 100%;
+        font-weight: inherit;
+        font-size: inherit;
+        color: inherit;
+        text-decoration: none;
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-bottom: 0.5rem;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.post__related-date {
+    font-weight: normal;
+    font-size: 12px;
+    color: #828282;
 }
