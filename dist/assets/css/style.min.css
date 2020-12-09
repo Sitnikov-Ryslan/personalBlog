@@ -683,7 +683,6 @@ body {
   background: #202020;
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.35);
   border-radius: 5px;
-  margin-bottom: 3rem;
   padding: 2.5rem;
   overflow: hidden; }
 
@@ -833,6 +832,98 @@ body {
   font-weight: normal;
   font-size: 12px;
   color: #828282; }
+
+.post__comments-title {
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 2rem; }
+
+.post__comments-textarea {
+  display: block;
+  width: 100%;
+  font-weight: normal;
+  font-size: 1.4rem;
+  font-family: inherit;
+  background: transparent;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid #3f3f3f;
+  padding: 0;
+  line-height: 1.6rem;
+  color: #fff;
+  height: 2.4rem;
+  margin-bottom: 1.2rem; }
+  .post__comments-textarea::placeholder {
+    color: rgba(255, 255, 255, 0.2); }
+
+.post__comments-submit {
+  display: inline-block;
+  vertical-align: top;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 0.7em 1.5em;
+  cursor: pointer;
+  border: 0;
+  text-decoration: none;
+  transition: background .1s;
+  background: #3137c9;
+  box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
+  border-radius: 5px;
+  margin-bottom: 5rem; }
+  .post__comments-submit:hover {
+    background: #272ca0; }
+
+.post__comments-item {
+  margin-bottom: 3rem; }
+  .post__comments-item > .post__comments-list {
+    margin-top: 3rem;
+    padding-left: 3rem; }
+  .post__comments-item:last-child {
+    margin-bottom: 0; }
+
+.post__comments-item-header {
+  display: flex;
+  margin-bottom: 1.5rem; }
+
+.post__comments-item-avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%; }
+
+.post__comments-item-author {
+  padding-left: 1.5rem;
+  flex-grow: 1;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.4rem; }
+
+.post__comments-item-name {
+  color: #fff;
+  margin-bottom: 0.2rem; }
+
+.post__comments-item-date {
+  color: #757575;
+  font-weight: 400; }
+
+.post__comments-item-text {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #fff;
+  margin-bottom: 0.5rem; }
+
+.post__comments-item-btn {
+  color: #3137c9;
+  font-family: inherit;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0; }
+  .post__comments-item-btn:hover {
+    text-decoration: underline; }
 
 .pagination {
   display: flex;

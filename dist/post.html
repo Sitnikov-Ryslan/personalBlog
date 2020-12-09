@@ -133,7 +133,7 @@
                             sed volutpat massa. Egestas ornare vel volutpat.
                         </p>
                     </div>
-                    <div class="post__related">
+                    <section class="post__related">
                         <h3 class="post__related-title">Интересно почитать</h3>
                         <ul class="post__related-list">
                             <li class="post__related-item">
@@ -161,7 +161,49 @@
                                 <time datetime="2020-06-21" class="post__related-date">21.06.2020</time>
                             </li>
                         </ul>
-                    </div>
+                    </section>
+                    <section class="post__comments">
+                        <h3 class="post__comments-title">Обсуждение</h3>
+                        <form action="/" method="post" class="post__comments-form">
+                            <textarea name="comment-text" placeholder="Текст комментария" class="post__comments-textarea"></textarea>
+                            <button type="submit" class="post__comments-submit">Отправить</button>
+                        </form>
+                        <ul class="post__comments-list">
+                            <li class="post__comments-item">
+                                <div class="post__comments-item-header">
+                                    <img src="https://placehold.it/30" alt="user-avatar" class="post__comments-item-avatar">
+                                    <div class="post__comments-item-author">
+                                        <h4 class="post__comments-item-name">Руслан Ситников</h4>
+                                        <time datetime="2020-12-01" class="post__comments-item-date">1 неделю назад</time>
+                                    </div>
+                                </div>
+                                <p class="post__comments-item-text">
+                                    Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at 
+                                    tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam 
+                                    sit sed volutpat massa. Egestas ornare vel volutpat.
+                                </p>
+                                <button type="button" class="post__comments-item-btn">ответить</button>
+                
+                                <ul class="post__comments-list">
+                                    <li class="post__comments-item">
+                                        <div class="post__comments-item-header">
+                                            <img src="https://placehold.it/30" alt="user-avatar" class="post__comments-item-avatar">
+                                            <div class="post__comments-item-author">
+                                                <h4 class="post__comments-item-name">Руслан Ситников</h4>
+                                                <time datetime="2020-12-01" class="post__comments-item-date">1 неделю назад</time>
+                                            </div>
+                                        </div>
+                                        <p class="post__comments-item-text">
+                                            Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at 
+                                            tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam 
+                                            sit sed volutpat massa. Egestas ornare vel volutpat.
+                                        </p>
+                                        <button type="button" class="post__comments-item-btn">ответить</button>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
                 </article>
             </div>
         </main>
