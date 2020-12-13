@@ -408,6 +408,13 @@ body {
     overflow: hidden;
 }
 
+.page__title {
+    font-weight: normal;
+    font-size: 2.1rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -858,9 +865,9 @@ body {
     background: #202020;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.35);
     border-radius: 5px;
-    margin-bottom: 3rem;
     padding: 2.5rem;
     overflow: hidden;
+    margin-bottom: 2rem;
 }
 
 .post__header {
@@ -1065,6 +1072,137 @@ body {
     color: #828282;
 }
 
+.post__comments-title {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.post__comments-textarea {
+    display: block;
+    width: 100%;
+    font-weight: normal;
+    font-size: 1.4rem;
+    font-family: inherit;
+    background: transparent;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #3f3f3f;
+    padding: 0;
+    line-height: 1.6rem;
+    color: #fff;
+    height: 2.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.post__comments-textarea::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.post__comments-textarea::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.post__comments-textarea:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.post__comments-textarea::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.post__comments-textarea::placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.post__comments-submit {
+    display: inline-block;
+    vertical-align: top;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+    border: 0;
+    text-decoration: none;
+    transition: background .1s;
+    background: #3137c9;
+    box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
+    border-radius: 5px;
+    margin-bottom: 5rem;
+}
+
+.post__comments-submit:hover {
+    background: #272ca0;
+}
+
+.post__comments-item {
+    margin-bottom: 3rem;
+}
+
+.post__comments-item > .post__comments-list {
+    margin-top: 3rem;
+    padding-left: 3rem;
+}
+
+.post__comments-item:last-child {
+    margin-bottom: 0;
+}
+
+.post__comments-item-header {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.post__comments-item-avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.post__comments-item-author {
+    padding-left: 1.5rem;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+
+.post__comments-item-name {
+    color: #fff;
+    margin-bottom: 0.2rem;
+}
+
+.post__comments-item-date {
+    color: #757575;
+    font-weight: 400;
+}
+
+.post__comments-item-text {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.post__comments-item-btn {
+    color: #3137c9;
+    font-family: inherit;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.post__comments-item-btn:hover {
+    text-decoration: underline;
+}
+
 .pagination {
     display: -ms-flexbox;
     display: flex;
@@ -1102,4 +1240,76 @@ body {
 .pagination__link.active {
     background: #104be3;
     box-shadow: 0px 0px 10px rgba(58, 108, 234, 0.15);
+}
+
+.work {
+    margin-bottom: 2rem;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 5px;
+    background: #202020;
+    overflow: hidden;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.work__preview {
+    display: block;
+    max-width: 31rem;
+}
+
+.work__content {
+    max-width: 29rem;
+    padding: 2.5rem;
+}
+
+.work__title {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    margin-bottom: 3rem;
+}
+
+.work__title a {
+    color: #fff;
+    text-decoration: none;
+    transition: all .1s;
+}
+
+.work__title a:hover {
+    text-decoration: underline;
+}
+
+.work__description {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    margin-bottom: 3rem;
+    color: #d2d2d2;
+}
+
+.work__tag-list {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.work__tag-item {
+    display: block;
+    border-radius: 3px;
+    background: #EA8C1E;
+    color: #fff;
+    padding: 0.4rem 0.9rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    max-width: 15rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

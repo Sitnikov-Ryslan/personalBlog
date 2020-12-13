@@ -364,6 +364,12 @@ body {
 .page {
   overflow: hidden; }
 
+.page__title {
+  font-weight: normal;
+  font-size: 2.1rem;
+  color: #fff;
+  margin-bottom: 3rem; }
+
 .header {
   position: fixed;
   top: 0;
@@ -684,7 +690,8 @@ body {
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.35);
   border-radius: 5px;
   padding: 2.5rem;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 2rem; }
 
 .post__header {
   display: block;
@@ -951,3 +958,88 @@ body {
   .pagination__link.active {
     background: #104be3;
     box-shadow: 0px 0px 10px rgba(58, 108, 234, 0.15); }
+
+.work {
+  margin-bottom: 3rem;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+  background: #202020;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap; }
+
+.work__preview {
+  display: block;
+  max-width: 31rem;
+  height: auto; }
+
+.work__content {
+  max-width: 29rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column; }
+
+.work__title {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  margin-bottom: 3rem; }
+  .work__title a {
+    color: #fff;
+    text-decoration: none;
+    transition: all .1s; }
+    .work__title a:hover {
+      text-decoration: underline; }
+
+.work__description {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.7rem;
+  margin-bottom: 3rem;
+  color: #d2d2d2; }
+
+.work__tag-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 3rem; }
+
+.work__tag-item {
+  display: block;
+  border-radius: 3px;
+  background: #EA8C1E;
+  color: #fff;
+  padding: 0.4rem 0.9rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  max-width: 15rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.work__btn {
+  display: inline-block;
+  max-width: 12.5rem;
+  vertical-align: top;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #fff;
+  padding: 0.8em 1.3em;
+  cursor: pointer;
+  border: 0;
+  text-decoration: none;
+  transition: background .1s;
+  background: #3137c9;
+  box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
+  border-radius: 5px;
+  margin-top: auto;
+  margin-left: auto; }
+  .work__btn:hover {
+    background: #272ca0; }
