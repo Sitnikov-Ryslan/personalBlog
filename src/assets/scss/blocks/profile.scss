@@ -1,0 +1,86 @@
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile__data {
+    width: 34rem;
+    margin-right: 11rem;
+}
+
+.profile__name,
+.profile__email,
+.profile__pass,
+.profile__pass-repeat {
+    display: block;
+    width: 100%;
+    font-weight: normal;
+    font-size: 1.4rem;
+    font-family: inherit;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #3f3f3f;
+    padding: 0;
+    line-height: 1.6rem;
+    color: $white;
+    height: 3.7rem;
+    margin-bottom: 2.5rem;
+
+    &::placeholder {
+        color: rgba($white, 0.2);
+    }
+
+    &:hover,
+    &:focus {
+        border-bottom: 1px solid $blue;
+    }
+}
+
+.profile__avatar {
+    width: 15rem;
+}
+
+.profile__avatar-img {
+    display: block;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 5px 15px rgba($black, 0.25);
+}
+
+.profile__avatar-label {
+    cursor: pointer;
+    color: #107eff;
+    text-decoration: underline;
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+
+    input {
+        display: none;
+    }
+
+    &:hover {
+        color: $blue;
+    }
+}
+
+.profile__submit {
+    display: inline-block;
+    vertical-align: top;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: $white;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+    border: 0;
+    text-decoration: none;
+    transition: background .1s;
+    background: $blue;
+    box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
+    border-radius: 5px;
+
+    &:hover {
+        background: darken($blue, 10%);
+    }
+}

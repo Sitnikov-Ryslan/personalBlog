@@ -228,6 +228,10 @@
     &::placeholder {
         color: rgba($white, 0.2);
     }
+
+    &:hover {
+        border-bottom: 1px solid $blue;
+    }
 }
 
 .post__comments-submit {

@@ -1,0 +1,23 @@
+---
+layout: default
+title: Profile
+---
+
+<h1 class="page__title">Профиль</h1>
+
+<form action="/" class="profile" method="POST">
+    <div class="profile__data">
+        <input type="text" class="profile__name" placeholder="Ваше имя" value="Ситников Руслан">
+        <input type="email" class="profile__email" placeholder="Ваш Email" value="google@gmail.com">
+        <input type="password" class="profile__pass" placeholder="Новый пароль">
+        <input type="password" class="profile__pass-repeat" placeholder="Подтвердите пароль">
+    </div>
+    <div class="profile__avatar">
+        <img src="https://placehold.it/150" alt="avatar" class="profile__avatar-img">
+        <label class="profile__avatar-label">
+            <input type="file">
+            <span>выбрать аватар</span>
+        </label>
+    </div>
+    <button type="submit" class="profile__submit">Сохранить</button>
+</form>

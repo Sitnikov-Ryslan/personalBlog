@@ -1,0 +1,73 @@
+.signin {
+    width: 28rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signin__email,
+.signin__pass {
+    display: block;
+    width: 100%;
+    font-weight: normal;
+    font-size: 1.4rem;
+    font-family: inherit;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #3f3f3f;
+    padding: 0;
+    line-height: 1.6rem;
+    color: $white;
+    height: 3.7rem;
+    margin-bottom: 2.5rem;
+
+    &::placeholder {
+        color: rgba($white, 0.2);
+    }
+
+    &:hover,
+    &:focus {
+        border-bottom: 1px solid $blue;
+    }
+}
+
+.signin__submit {
+    display: inline-block;
+    vertical-align: top;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: $white;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+    border: 0;
+    text-decoration: none;
+    transition: background .1s;
+    background: $blue;
+    box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
+    border-radius: 5px;
+    margin-bottom: 2rem;
+
+    &:hover {
+        background: darken($blue, 10%);
+    }
+}
+
+.signin__footer-link {
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: $white;
+    text-decoration: none;
+    margin-right: 1.5rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
