@@ -405,6 +405,7 @@ body {
 }
 
 .page {
+    min-height: 100vh;
     overflow: hidden;
 }
 
@@ -413,6 +414,10 @@ body {
     font-size: 2.1rem;
     color: #fff;
     margin-bottom: 3rem;
+}
+
+.page__title_center {
+    text-align: center;
 }
 
 .header {
@@ -1116,6 +1121,10 @@ body {
     color: rgba(255, 255, 255, 0.2);
 }
 
+.post__comments-textarea:hover {
+    border-bottom: 1px solid #3137c9;
+}
+
 .post__comments-submit {
     display: inline-block;
     vertical-align: top;
@@ -1346,4 +1355,406 @@ body {
 
 .work__btn:hover {
     background: #272ca0;
+}
+
+.profile {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.profile__data {
+    width: 34rem;
+    margin-right: 11rem;
+}
+
+.profile__name,
+.profile__email,
+.profile__pass,
+.profile__pass-repeat {
+    display: block;
+    width: 100%;
+    font-weight: normal;
+    font-size: 1.4rem;
+    font-family: inherit;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #3f3f3f;
+    padding: 0;
+    line-height: 1.6rem;
+    color: #fff;
+    height: 3.7rem;
+    margin-bottom: 2.5rem;
+}
+
+.profile__name::-webkit-input-placeholder, .profile__email::-webkit-input-placeholder, .profile__pass::-webkit-input-placeholder, .profile__pass-repeat::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.profile__name::-moz-placeholder, .profile__email::-moz-placeholder, .profile__pass::-moz-placeholder, .profile__pass-repeat::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.profile__name:-ms-input-placeholder, .profile__email:-ms-input-placeholder, .profile__pass:-ms-input-placeholder, .profile__pass-repeat:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.profile__name::-ms-input-placeholder, .profile__email::-ms-input-placeholder, .profile__pass::-ms-input-placeholder, .profile__pass-repeat::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.profile__name::placeholder,
+  .profile__email::placeholder,
+  .profile__pass::placeholder,
+  .profile__pass-repeat::placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.profile__name:hover, .profile__name:focus,
+  .profile__email:hover,
+  .profile__email:focus,
+  .profile__pass:hover,
+  .profile__pass:focus,
+  .profile__pass-repeat:hover,
+  .profile__pass-repeat:focus {
+    border-bottom: 1px solid #3137c9;
+}
+
+.profile__avatar {
+    width: 15rem;
+}
+
+.profile__avatar-img {
+    display: block;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.profile__avatar-label {
+    cursor: pointer;
+    color: #107eff;
+    text-decoration: underline;
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+.profile__avatar-label input {
+    display: none;
+}
+
+.profile__avatar-label:hover {
+    color: #3137c9;
+}
+
+.profile__submit {
+    display: inline-block;
+    vertical-align: top;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+    border: 0;
+    text-decoration: none;
+    transition: background .1s;
+    background: #3137c9;
+    box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
+    border-radius: 5px;
+}
+
+.profile__submit:hover {
+    background: #272ca0;
+}
+
+.signup {
+    width: 28rem;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.signup__name,
+.signup__email,
+.signup__pass,
+.signup__pass-repeat {
+    display: block;
+    width: 100%;
+    font-weight: normal;
+    font-size: 1.4rem;
+    font-family: inherit;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #3f3f3f;
+    padding: 0;
+    line-height: 1.6rem;
+    color: #fff;
+    height: 3.7rem;
+    margin-bottom: 2.5rem;
+}
+
+.signup__name::-webkit-input-placeholder, .signup__email::-webkit-input-placeholder, .signup__pass::-webkit-input-placeholder, .signup__pass-repeat::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.signup__name::-moz-placeholder, .signup__email::-moz-placeholder, .signup__pass::-moz-placeholder, .signup__pass-repeat::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.signup__name:-ms-input-placeholder, .signup__email:-ms-input-placeholder, .signup__pass:-ms-input-placeholder, .signup__pass-repeat:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.signup__name::-ms-input-placeholder, .signup__email::-ms-input-placeholder, .signup__pass::-ms-input-placeholder, .signup__pass-repeat::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.signup__name::placeholder,
+  .signup__email::placeholder,
+  .signup__pass::placeholder,
+  .signup__pass-repeat::placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.signup__name:hover, .signup__name:focus,
+  .signup__email:hover,
+  .signup__email:focus,
+  .signup__pass:hover,
+  .signup__pass:focus,
+  .signup__pass-repeat:hover,
+  .signup__pass-repeat:focus {
+    border-bottom: 1px solid #3137c9;
+}
+
+.signup__submit {
+    display: inline-block;
+    vertical-align: top;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+    border: 0;
+    text-decoration: none;
+    transition: background .1s;
+    background: #3137c9;
+    box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.signup__submit:hover {
+    background: #272ca0;
+}
+
+.signup__footer-link {
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1.5rem;
+}
+
+.signup__footer-link:last-child {
+    margin-right: 0;
+}
+
+.signup__footer-link:hover {
+    text-decoration: underline;
+}
+
+.signin {
+    width: 28rem;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.signin__email,
+.signin__pass {
+    display: block;
+    width: 100%;
+    font-weight: normal;
+    font-size: 1.4rem;
+    font-family: inherit;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #3f3f3f;
+    padding: 0;
+    line-height: 1.6rem;
+    color: #fff;
+    height: 3.7rem;
+    margin-bottom: 2.5rem;
+}
+
+.signin__email::-webkit-input-placeholder, .signin__pass::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.signin__email::-moz-placeholder, .signin__pass::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.signin__email:-ms-input-placeholder, .signin__pass:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.signin__email::-ms-input-placeholder, .signin__pass::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.signin__email::placeholder,
+  .signin__pass::placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.signin__email:hover, .signin__email:focus,
+  .signin__pass:hover,
+  .signin__pass:focus {
+    border-bottom: 1px solid #3137c9;
+}
+
+.signin__submit {
+    display: inline-block;
+    vertical-align: top;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+    border: 0;
+    text-decoration: none;
+    transition: background .1s;
+    background: #3137c9;
+    box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.signin__submit:hover {
+    background: #272ca0;
+}
+
+.signin__footer-link {
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1.5rem;
+}
+
+.signin__footer-link:last-child {
+    margin-right: 0;
+}
+
+.signin__footer-link:hover {
+    text-decoration: underline;
+}
+
+.reset {
+    width: 28rem;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.reset__email {
+    display: block;
+    width: 100%;
+    font-weight: normal;
+    font-size: 1.4rem;
+    font-family: inherit;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #3f3f3f;
+    padding: 0;
+    line-height: 1.6rem;
+    color: #fff;
+    height: 3.7rem;
+    margin-bottom: 2.5rem;
+}
+
+.reset__email::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.reset__email::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.reset__email:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.reset__email::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.reset__email::placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.reset__email:hover, .reset__email:focus {
+    border-bottom: 1px solid #3137c9;
+}
+
+.reset__submit {
+    display: inline-block;
+    vertical-align: top;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+    border: 0;
+    text-decoration: none;
+    transition: background .1s;
+    background: #3137c9;
+    box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.reset__submit:hover {
+    background: #272ca0;
+}
+
+.reset__footer-link {
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1.5rem;
+}
+
+.reset__footer-link:last-child {
+    margin-right: 0;
+}
+
+.reset__footer-link:hover {
+    text-decoration: underline;
 }

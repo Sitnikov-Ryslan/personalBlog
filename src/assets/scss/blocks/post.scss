@@ -251,7 +251,8 @@
     border-radius: 5px;
     margin-bottom: 5rem;
 
-    &:hover {
+    &:hover,
+    &:focus {
         background: darken($blue, 10%);
     }
 }
@@ -314,7 +315,8 @@
     cursor: pointer;
     padding: 0;
 
-    &:hover {
+    &:hover,
+    &:focus {
         text-decoration: underline;
     }
 }

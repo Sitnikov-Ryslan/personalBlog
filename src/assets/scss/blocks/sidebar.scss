@@ -126,7 +126,8 @@
     background: $red;
     box-shadow: 0 7px 17px -10px rgba($red, .2);
 
-    &:hover {
+    &:hover,
+    &:focus {
         background: darken($red, 10%);
     }
 }
@@ -135,7 +136,8 @@
     background: $blue;
     box-shadow: 0 7px 17px -10px rgba($blue, .2);
 
-    &:hover {
+    &:hover,
+    &:focus {
         background: darken($blue, 10%);
     }
 }
