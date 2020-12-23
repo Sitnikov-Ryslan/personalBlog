@@ -7,3 +7,12 @@ $blue: #3137c9;
 $yellow: #F3EBA2;
 
 $sidebar-width: 300px;
+
+$tablet: 991px;
+$mobile: 700px;
+
+@mixin breakpoint($bp) {
+    @media (max-width: $bp) {
+        @content;
+    }
+}

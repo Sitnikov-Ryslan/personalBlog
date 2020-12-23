@@ -12,6 +12,7 @@
 }
 
 .add-post__text {
+    flex-grow: 1;
     width: 82%;
     height: 3rem;
     font-family: inherit;
@@ -21,6 +22,7 @@
     background: transparent;
     border: none;
     resize: none;
+    overflow: hidden;
 
     &::placeholder {
         color: #d2d2d2;
@@ -29,8 +31,10 @@
 
 .add-post__btns {
     display: flex;
-    width: 18%;
+    // width: 18%;
     justify-content: space-between;
+    width: 100px;
+    flex-shrink: 0;
 }
 
 .add-post__file {

@@ -6,12 +6,20 @@
     display: flex;
     background: #0d0d0d;
     box-shadow: 0 5px 22px rgba($black, .25);
-    z-index: 1;
+    z-index: 2;
+
+    @include breakpoint($tablet) {
+        width: 100%;
+    }
 }
 
 .header__list {
     display: flex;
     width: 60%;
+
+    @include breakpoint($tablet) {
+        display: none;
+    }
 }
 
 .header__list-item {
@@ -80,15 +88,89 @@
     }
 }
 
+.header__burger {
+    display: none;
+    width: 3rem;
+    height: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    transform: translateY(-50%);
+    background: none;
+    border: 0;
+    padding: 0;
+
+    &:before,
+    &:after,
+    span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: $white;
+        font-size: 0;
+        color: transparent;
+        position: absolute;
+        left: 0;
+    }
+
+    &:before {
+        top: 0;
+        content: '';
+    }
+
+    &:after {
+        bottom: 0;
+        content: '';
+    }
+
+    span {
+        top: 50%;
+        transform: translateY(-50%);
+        transition: opacity .1s;
+    }
+
+    .show-sidebar & {
+        span {
+            opacity: 0;
+        }
+
+        &:before,
+        &:after {
+            top: 50%;
+            transition: transform .2s;
+        }
+
+        &:before {
+            transform: rotate(45deg);
+        }
+
+        &:after {
+            transform: rotate(-45deg);
+        }
+    }
+
+    @include breakpoint($tablet) {
+        display: block;
+    }
+}
+
 .header__right {
     display: flex;
     width: 40%;
     justify-content: flex-end;
+
+    @include breakpoint($tablet) {
+        width: 100%;
+    }
 }
 
 .header__right-link {
     &:hover {
         background: $blue;
+    }
+
+    @include breakpoint($tablet) {
+        display: none;
     }
 }
 
