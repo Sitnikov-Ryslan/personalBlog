@@ -1,11 +1,19 @@
 .profile {
     display: flex;
     flex-wrap: wrap;
+
+    @include breakpoint($mobile) {
+        flex-direction: column;
+    }
 }
 
 .profile__data {
     width: 34rem;
     margin-right: 11rem;
+
+    @include breakpoint($mobile) {
+        width: 100%;
+    }
 }
 
 .profile__name,
@@ -38,6 +46,10 @@
 
 .profile__avatar {
     width: 15rem;
+
+    @include breakpoint($mobile) {
+        margin-bottom: 2rem;
+    }
 }
 
 .profile__avatar-img {
@@ -65,6 +77,7 @@
 }
 
 .profile__submit {
+    width: 94px;
     display: inline-block;
     vertical-align: top;
     font-family: inherit;

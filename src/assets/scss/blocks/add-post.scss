@@ -4,6 +4,10 @@
     border-radius: 5px;
     background: $secondary;
     padding: 1.5rem 2rem;
+
+    @include breakpoint($mobile) {
+        padding: 1rem 1.5rem;
+    }
 }
 
 .add-post__form {
@@ -27,14 +31,21 @@
     &::placeholder {
         color: #d2d2d2;
     }
+
+    @include breakpoint($mobile) {
+        font-size: 1.4rem;
+    }
 }
 
 .add-post__btns {
     display: flex;
-    // width: 18%;
     justify-content: space-between;
     width: 100px;
     flex-shrink: 0;
+
+    @include breakpoint($mobile) {
+        width: 95px;
+    }
 }
 
 .add-post__file {

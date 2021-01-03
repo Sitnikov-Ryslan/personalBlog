@@ -5,6 +5,10 @@
     padding: 2.5rem;
     overflow: hidden;
     margin-bottom: 2rem;
+
+    @include breakpoint($mobile) {
+        padding: 1.5rem;
+    }
 }
 
 .post__header {
@@ -24,6 +28,11 @@
             padding-top: 56.25%;
         }
     }
+
+    @include breakpoint ($mobile) {
+        max-width: 112%;
+        margin: -1.5rem -1.5rem 1.5rem -1.5rem;   
+    }
 }
 
 .post__title {
@@ -42,7 +51,7 @@
     }
 
     &_open {
-        margin-bottom: 0.4rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -78,6 +87,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include breakpoint($mobile) {
+        flex-direction: column;
+        align-items: start;
+    }
 }
 
 .post__data {
@@ -97,6 +111,10 @@
 
     &_open {
         margin-bottom: 3rem;
+    }
+
+    @include breakpoint($mobile) {
+        margin-bottom: 1rem;
     }
 }
 
@@ -171,6 +189,10 @@
 .post__related-item {
     width: 45%;
     margin-bottom: 2.5rem;
+
+    @include breakpoint($mobile) {
+        width: 100%;
+    }
 }
 
 .post__related-subtitle {
@@ -263,6 +285,11 @@
     > .post__comments-list {
         margin-top: 3rem;
         padding-left: 3rem;
+
+        @include breakpoint($mobile) {
+            margin-top: 2rem;
+            padding-left: 1.5rem;
+        }
     }
 
     &:last-child {

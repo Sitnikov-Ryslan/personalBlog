@@ -183,6 +183,7 @@
 .header__input {
     display: block;
     width: 100%;
+    height: 4rem;
     padding: 1.2rem 2rem;
     background: transparent;
     border: none;
@@ -196,5 +197,9 @@
 
     &:hover {
         background: $blue;
+    }
+
+    @include breakpoint($mobile) {
+        font-size: 1.6rem;
     }
 }

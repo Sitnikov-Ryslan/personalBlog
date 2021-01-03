@@ -6,12 +6,22 @@
     overflow: hidden;
     display: flex;
     flex-wrap: nowrap;
+
+    @include breakpoint($mobile) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .work__preview {
     display: block;
     max-width: 31rem;
     height: auto;
+
+    @include breakpoint($mobile) {
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 .work__content {
@@ -19,6 +29,10 @@
     padding: 2.5rem;
     display: flex;
     flex-direction: column;
+
+    @include breakpoint($mobile) {
+        max-width: none;
+    }
 }
 
 .work__title {
@@ -37,6 +51,10 @@
             text-decoration: underline;
         }
     }
+
+    @include breakpoint($mobile) {
+        margin-bottom: 2rem;
+    }
 }
 
 .work__description {
@@ -45,6 +63,11 @@
     line-height: 2.7rem;
     margin-bottom: 3rem;
     color: #d2d2d2;
+
+    @include breakpoint($mobile) {
+        margin-bottom: 2rem;
+        font-size: 1.4rem;
+    }
 }
 
 .work__tag-list {
@@ -94,5 +117,9 @@
 
     &:hover {
         background: darken($blue, 10%);
+    }
+
+    @include breakpoint($mobile) {
+        margin-left: 0;
     }
 }
