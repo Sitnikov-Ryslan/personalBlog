@@ -43,7 +43,7 @@
                     <a href="text.html" class="header__list-link">Реклама</a>
                 </li>
             </ul>
-            <button class="header__burger" type="button">
+            <button class="header__burger" type="button" id="sidebarToggle">
                 <span>Открыть навигацию</span>
             </button>
             <div class="header__right">
@@ -55,7 +55,7 @@
             </div>
         </header>
 
-        <aside class="sidebar">
+        <aside class="sidebar" id="sidebar">
             <div class="sidebar__content">
                 <img src="https://placehold.it/100" alt="avatar" class="sidebar__content-img">
                 <h1 class="sidebar__content-name">Ситников Руслан</h1>
@@ -108,7 +108,7 @@
             </ul>
             <div class="sidebar__footer">
                 <a href="works.html" class="sidebar__works-btn">Мои работы</a>
-                <button class="sidebar__write-btn">Написать мне</button>
+                <button class="sidebar__write-btn" data-modal="contact-modal">Написать мне</button>
             </div>
         </aside>
         <main class="main">
@@ -131,8 +131,46 @@
         </main>
     </div>
 
-    <div class="modal">
-        <video src="" class="modal__video" poster="https://placehold.it/420x580"></video>
+    <div class="modal" id="story-modal">
+        <div class="modal__content modal__content_story">
+            <video src="" class="modal__video" poster="https://placehold.it/420x580"></video>
+        </div>
+    </div>    <div class="modal" id="contact-modal">
+        <form class="modal__content"  method="POST" action="/">
+            <input type="text" class="modal__name" placeholder="Ваше имя">
+            <input type="email" class="modal__email" placeholder="Ваш Email">
+            <textarea class="modal__text" placeholder="Текст сообщения"></textarea>
+            <button type="submit" class="modal__submit">Отправить</button>
+            <ul class="modal__info">
+                <li>
+                    e-mail: 
+                    <a href="mailto:sitnikov.ryslan1992@gmail.com">sitnikov.ryslan1992@gmail.com</a>
+                </li>
+                <li>
+                    тел: 
+                    <a href="tel:">+7-999-777-55-11</a>
+                </li>
+            </ul>
+            <button class="modal__close" type="button" alt="закрыть"></button>
+        </form>
+    </div>    <div class="modal" id="share-modal">
+        <div class="modal__content modal__content_sh">
+            <ul class="modal__social">
+                <li class="modal__item">
+                    <a href="#" class="modal__link"></a>
+                </li>
+                <li class="modal__item">
+                    <a href="#" class="modal__link"></a>
+                </li>
+                <li class="modal__item">
+                    <a href="#" class="modal__link"></a>
+                </li>
+                <li class="modal__item">
+                    <a href="#" class="modal__link"></a>
+                </li>
+            </ul>
+            <button class="modal__close" type="button" alt="закрыть"></button>
+        </div>
     </div>
     <script src="assets/js/app.js"></script>
 </body>

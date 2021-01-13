@@ -355,8 +355,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.4rem;
   color: #fff; }
-  body.no-scroll, body.show-sidebar {
+  body.no-scroll {
     overflow: hidden; }
+  @media (max-width: 700px) {
+    body.show-sidebar {
+      overflow: hidden; } }
 
 *,
 *:before,
@@ -368,17 +371,7 @@ body {
   overflow: hidden; }
   @media (max-width: 991px) {
     .show-sidebar .page {
-      position: relative; }
-      .show-sidebar .page:after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.8);
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1; } }
+      position: relative; } }
 
 .page__title {
   font-weight: normal;
@@ -387,6 +380,17 @@ body {
   margin-bottom: 3rem; }
   .page__title_center {
     text-align: center; }
+
+@media (max-width: 991px) {
+  .page__mask {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; } }
 
 .header {
   position: fixed;
@@ -816,12 +820,12 @@ body {
 
 .add-post__form {
   display: flex;
-  align-items: center; }
+  align-items: flex-end; }
 
 .add-post__text {
   flex-grow: 1;
   width: 82%;
-  height: 3rem;
+  height: 3.4rem;
   font-family: inherit;
   font-weight: normal;
   font-size: 1.5rem;
@@ -1563,6 +1567,8 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center; }
+  .modal.show {
+    display: flex; }
 
 .modal__content {
   width: 100%;
@@ -1570,9 +1576,17 @@ body {
   padding: 8rem 8rem 2.5rem 8rem;
   background: #202020;
   border-radius: 5px;
-  position: relative; }
+  position: relative;
+  transform: translateY(-50px);
+  transition: transform .2s; }
+  @media (max-width: 700px) {
+    .modal__content {
+      padding: 5rem 3rem 3rem 3rem; } }
   .modal__content_sh {
     padding: 7.5rem 0; }
+  .modal__content_story {
+    padding: 0;
+    background: none; }
 
 .modal__name,
 .modal__email {
@@ -1666,6 +1680,12 @@ body {
     cursor: pointer; }
     .modal__info a:hover {
       text-decoration: none; }
+  @media (max-width: 700px) {
+    .modal__info {
+      flex-wrap: wrap; } }
+  @media (max-width: 700px) {
+    .modal__info li:first-child {
+      margin-bottom: 1rem; } }
 
 .modal__social {
   display: flex;
@@ -1690,3 +1710,7 @@ body {
   display: block;
   width: 4.5rem;
   height: 4.5rem; }
+
+.modal__video {
+  display: block;
+  margin: 0 auto; }

@@ -12,13 +12,13 @@
 
 .add-post__form {
     display: flex;
-    align-items: center;
+    align-items:flex-end;
 }
 
 .add-post__text {
     flex-grow: 1;
     width: 82%;
-    height: 3rem;
+    height: 3.4rem;
     font-family: inherit;
     font-weight: normal;
     font-size: 1.5rem;

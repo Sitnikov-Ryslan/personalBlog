@@ -6,7 +6,7 @@ title: Post
 <article class="post">
     <div class="post__actions">
         <a href="index.html" class="post__back">вернуться назад</a>
-        <a href="#" class="post__share">поделиться</a>
+        <a href="#" class="post__share" data-modal="share-modal">поделиться</a>
     </div>
     <h2 class="post__title post__title_open">
         <a href="#">Как создавать сайты легко</a>
@@ -83,7 +83,7 @@ title: Post
     <section class="post__comments">
         <h3 class="post__comments-title">Обсуждение</h3>
         <form action="/" method="post" class="post__comments-form">
-            <textarea name="comment-text" placeholder="Текст комментария" class="post__comments-textarea"></textarea>
+            <textarea name="comment-text" placeholder="Текст комментария" class="post__comments-textarea" data-resize></textarea>
             <button type="submit" class="post__comments-submit">Отправить</button>
         </form>
         <ul class="post__comments-list">

@@ -11,6 +11,10 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
+    &.show {
+        display: flex;
+    }
 }
 
 .modal__content {
@@ -20,9 +24,20 @@
     background: $primary;
     border-radius: 5px;
     position: relative;
+    transform: translateY(-50px);
+    transition: transform .2s;
+
+    @include breakpoint($mobile) {
+        padding: 5rem 3rem 3rem 3rem;
+    }
 
     &_sh {
         padding: 7.5rem 0;
+    }
+
+    &_story {
+        padding: 0;
+        background: none;
     }
 }
 
@@ -139,6 +154,18 @@
             text-decoration: none;
         }
     }
+
+    @include breakpoint($mobile) {
+        flex-wrap: wrap;
+    }
+
+    li {
+        &:first-child {
+            @include breakpoint($mobile) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
 }
 
 .modal__social {
@@ -177,4 +204,9 @@
     display: block;
     width: 4.5rem;
     height: 4.5rem;
+}
+
+.modal__video {
+    display: block;
+    margin: 0 auto;
 }
